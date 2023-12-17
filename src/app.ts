@@ -3,7 +3,7 @@ import "reflect-metadata";
 const cors = require('cors')
 require('dotenv').config()
 const app: Application = express();
-import dbCreateConnectionPostgresql from '../src/dbConnection'
+import dbCreateConnectionPostgresql from './config/dbConnection'
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors())
